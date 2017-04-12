@@ -1,0 +1,522 @@
+<html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<style>
+  #second {
+    display: none;
+  }
+  
+  #ins {
+    display: none;
+  }
+  
+  nav a {
+    line-height: 11.5vh;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    height: 10.8vh;
+    width: 50.2%;
+    margin: -0.8vh;
+    outline: none;
+  }
+  
+  nav a:hover {
+    background-color: #ee5f3c;
+  }
+  
+  .button {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .hr1 {
+    left: 20vh;
+  }
+  
+  .hr2 {
+    left: 38vh;
+  }
+  
+  .hr3 {
+    left: 57vh;
+  }
+  
+  .hr4 {
+    left: 75vh;
+  }
+  
+  .main {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .whole {
+    background: url("http://www.muhammadusman.tk/images/homeinside.jpg");
+    font-size: 12vh;
+    letter-spacing: 2vh;
+    padding: 2vh;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    width: 93vh;
+  }
+  
+  .whole div {
+    display: inline-block;
+    height: 14vh;
+    margin: 1vh;
+    text-align: center;
+    width: 16vh;
+  }
+  
+  body {
+    background: url("http://www.muhammadusman.tk/images/home.jpg");
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  button {
+    margin: auto;
+  }
+  
+  nav {
+    background: #595b5b;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    display: block;
+    font-family: 'Vollkorn', serif;
+    font-size: 3.3vh;
+    font-weight: 800;
+    height: 10vh;
+    letter-spacing: 0.4vh;
+    text-align: center;
+  }
+  
+  .select abc {
+    height: 84vh;
+    display: inline-block;
+    margin: -2.4vh;
+    z-index: 9999;
+    opacity: 0.2;
+    top: 2.3vh;
+    position: absolute;
+  }
+  
+  .sfirst {
+    width: 20.2%;
+    left: 3vh;
+    /*background: red;*/
+  }
+  
+  .ssecond {
+    width: 18.4%;
+    left: 22.6vh;
+    /*background: black;*/
+  }
+  
+  .sthird {
+    width: 19.5%;
+    left: 40.5vh;
+    /*background: blue;*/
+  }
+  
+  .sfourth {
+    width: 18.7%;
+    left: 59.6vh;
+    /*background: red;*/
+  }
+  
+  .sfifth {
+    width: 22.3%;
+    left: 77.6vh;
+    /*background: black;*/
+  }
+  
+  hr {
+    height: 83.8vh;
+    position: absolute;
+    top: -6vh;
+    width: 0.2vh;
+    z-index: 99;
+  }
+  
+  .holeOut {
+    animation-name: holeOut;
+    animation-duration: 2s;
+  }
+  
+  @keyframes holeOut {
+    0% {
+      opacity: 1;
+      transform-origin: 50% 50%;
+      transform: scale(1, 1) rotateY(0deg);
+    }
+    100% {
+      opacity: 0;
+      transform-origin: 50% 50%;
+      transform: scale(0, 0) rotateY(180deg);
+    }
+  }
+</style>
+
+<nav class="header">
+  <a onclick="nav('game')">Game</a>
+  <a onclick="nav('ins')">Instructions</a>
+</nav>
+
+
+<div class="main">
+  <div id="game">
+
+
+    <div id="first">
+      <!--<div class="button">
+
+
+          <button type="first" value="first" onclick="choosef(this.value)"></button> 
+          <button type="second" value="second" onclick="choosef(this.value)"></button> 
+          <button type="third" value="third" onclick="choosef(this.value)"></button> 
+          <button type="fourth" value="fourth" onclick="choosef(this.value)"></button> 
+          <button type="fifth" value="fifth" onclick="choosef(this.value)"></button>
+            </div>-->
+
+
+      <div id="firststage">
+
+
+
+        <div class="whole">
+
+          <abc class="select">
+
+            <abc class="sfirst" onclick="choosef('first')"></abc>
+            <abc class="ssecond" onclick="choosef('second')"></abc>
+            <abc class="sthird" onclick="choosef('third')"></abc>
+            <abc class="sfourth" onclick="choosef('fourth')"></abc>
+            <abc class="sfifth" onclick="choosef('fifth')"></abc>
+          </abc>
+
+
+          <hr class="hr1">
+          <hr class="hr2">
+          <hr class="hr3">
+          <hr class="hr4">
+          <!--
+                    <div class="a">a</div>
+                    <div class="b">b</div>
+                    <div class="c">c</div>
+                    <div class="d">d</div>
+                    <div class="e">e</div>
+                    <div class="f">f</div>
+                    <div class="g">g</div>
+                    <div class="h">h</div>
+                    <div class="i">i</div>
+                    <div class="j">j</div>
+                    <div class="k">k</div>
+                    <div class="l">l</div>
+                    <div class="m">m</div>
+                    <div class="n">n</div>
+                    <div class="o">o</div>
+                    <div class="p">p</div>
+                    <div class="q">q</div>
+                    <div class="r">r</div>
+                    <div class="s">s</div>
+                    <div class="t">t</div>
+                    <div class="u">u</div>
+                    <div class="v">v</div>
+                    <div class="w">w</div>
+                    <div class="x">x</div>
+                    <div class="y">y</div>-->
+        </div>
+
+      </div>
+
+    </div>
+    <div id="second">
+      <!--<div class="button">
+
+          <button type="first" value="first" onclick="chooses(this.value)"></button> 
+          <button type="second" value="second" onclick="chooses(this.value)"></button> 
+          <button type="third" value="third" onclick="chooses(this.value)"></button> 
+          <button type="fourth" value="fourth" onclick="chooses(this.value)"></button> 
+          <button type="fifth" value="fifth" onclick="chooses(this.value)"></button>
+
+</div>-->
+      <div id="secondstage">
+
+
+
+        <div class="whole">
+
+
+          <abc class="select">
+
+            <abc class="sfirst" onclick="chooses('first')"></abc>
+            <abc class="ssecond" onclick="chooses('second')"></abc>
+            <abc class="sthird" onclick="chooses('third')"></abc>
+            <abc class="sfourth" onclick="chooses('fourth')"></abc>
+            <abc class="sfifth" onclick="chooses('fifth')"></abc>
+          </abc>
+
+
+          <hr class="hr1">
+          <hr class="hr2">
+          <hr class="hr3">
+          <hr class="hr4">
+          <!--
+              <div class="e">e</div>
+              <div class="j">j</div>
+              <div class="o">o</div>
+              <div class="t">t</div>
+              <div class="y">y</div>
+              <div class="d">d</div>
+              <div class="i">i</div>
+              <div class="n">n</div>
+              <div class="s">s</div>
+              <div class="x">x</div>
+              <div class="c">c</div>
+              <div class="h">h</div>
+              <div class="m">m</div>
+              <div class="r">r</div>
+              <div class="w">w</div>
+              <div class="b">b</div>
+              <div class="g">g</div>
+              <div class="l">l</div>
+              <div class="q">q</div>
+              <div class="v">v</div>
+              <div class="a">a</div>
+              <div class="f">f</div>
+              <div class="k">k</div>
+              <div class="p">p</div>
+              <div class="u">u</div>-->
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div id="ins">
+    checking
+  </div>
+</div>
+<script>
+                                         var firstl = ["a", "b", "c", "d", "e"];
+                                         var secondl = ["f", "g", "h", "i", "j"];
+                                         var thirdl = ["k", "l", "m", "n", "o"];
+                                         var fourthl = ["p", "q", "r", "s", "t"];
+                                         var fifthl = ["u", "v", "w", "x", "y"];
+
+
+
+
+                                         // var firstl = ["e", "j", "o", "t", "y"];
+                                         // var secondl = ["d", "i", "n", "s", "x"];
+                                         // var thirdl = ["c", "h", "m", "r", "w"];
+                                         // var fourthl = ["b", "g", "l", "q", "v"];
+                                         // var fifthl = ["a", "f", "k", "p", "u"];
+
+                                         // for (var i = 0; i <firstf.length + 4; i += 1) {
+
+
+                                         $("#firststage .whole").prepend('<div class="a">a</div><div class="b">b</div><div class="c">c</div><div class="d">d</div><div class="e">e</div><div class="f">f</div><div class="g">g</div><div class="h">h</div><div class="i">i</div><div class="j">j</div><div class="k">k</div><div class="l">l</div><div class="m">m</div><div class="n">n</div><div class="o">o</div><div class="p">p</div><div class="q">q</div><div class="r">r</div><div class="s">s</div><div class="t">t</div><div class="u">u</div><div class="v">v</div><div class="w">w</div><div class="x">x</div><div class="y">y</div>');
+
+
+                                         // $("#firststage .whole").prepend('<div name="' + secondf[i] + '">' + secondf[i] + '</div>');
+                                         // $("#firststage .whole").prepend('<div name="' + thirdf[i] + '">' + thirdf[i] + '</div>');
+                                         // $("#firststage .whole").prepend('<div name="' + fourthf[i] + '">' + fourthf[i] + '</div>');
+                                         // $("#firststage .whole").prepend('<div name="' + fifthf[i] + '">' + fifthf[i] + '</div>');
+
+                                         // }
+                                         //  $("#secondstage .whole").prepend('abcs');
+
+
+                                         // function secondstagefun() {
+
+
+
+                                         for (var i = 0; i < firstl.length + 4; i += 1) {
+
+                                           var rndnumb = Math.floor(Math.random() * firstl.length);
+                                           // container.setAttribute('class', cards[rndnumb]);
+                                           var wholesecond = document.querySelector("#secondstage .whole");
+
+                                           // var abc = "checking";
+                                           // wholesecond.appendChild(abc);
+                                           $("#secondstage .whole").prepend('<div name="' + firstl[rndnumb] + '">' + firstl[rndnumb] + '</div>');
+                                           $("#secondstage .whole").prepend('<div name="' + secondl[rndnumb] + '">' + secondl[rndnumb] + '</div>');
+                                           $("#secondstage .whole").prepend('<div name="' + thirdl[rndnumb] + '">' + thirdl[rndnumb] + '</div>');
+                                           $("#secondstage .whole").prepend('<div name="' + fourthl[rndnumb] + '">' + fourthl[rndnumb] + '</div>');
+                                           $("#secondstage .whole").prepend('<div name="' + fifthl[rndnumb] + '">' + fifthl[rndnumb] + '</div>');
+
+
+                                           firstl.splice(rndnumb, 1);
+                                           secondl.splice(rndnumb, 1);
+                                           thirdl.splice(rndnumb, 1);
+                                           fourthl.splice(rndnumb, 1);
+                                           fifthl.splice(rndnumb, 1);
+
+                                         }
+                                         // }
+
+                                         var first = document.getElementById("first")
+                                         var second = document.getElementById("second")
+                                         var choosef;
+
+                                         function choosef(value) {
+                                           choosef = value;
+
+                                           first.className += ' holeOut';
+
+
+                                           setTimeout(function () {
+                                             first.style.display = 'none';
+                                             second.style.display = 'block';
+
+                                           }, 1500);
+
+                                           console.log(value);
+                                           // alert(value);
+                                           // secondstagefun();
+
+                                           // result();
+                                         }
+                                         var chooses;
+
+                                         function chooses(value) {
+                                           chooses = value;
+
+                                           second.className += ' holeOut';
+
+
+                                           setTimeout(function () {
+                                             second.style.display = 'none';
+                                             // third.style.display = "block";
+                                             result();
+                                           }, 1500);
+
+
+                                         }
+
+                                         function result() {
+
+
+
+                                           if (choosef === "first") {
+                                             if (chooses === "first") {
+                                               alert("u");
+                                             }
+                                             if (chooses === "second") {
+                                               alert("p");
+                                             } if (chooses === "third") {
+                                               alert("k");
+                                             } if (chooses === "fourth") {
+                                               alert("f");
+                                             } if (chooses === "fifth") {
+                                               alert("a");
+                                             }
+                                           }
+
+
+                                           if (choosef === "second") {
+                                             if (chooses === "first") {
+                                               alert("u");
+                                             }
+                                             if (chooses === "second") {
+                                               alert("q");
+                                             } if (chooses === "third") {
+                                               alert("l");
+                                             } if (chooses === "fourth") {
+                                               alert("g");
+                                             } if (chooses === "fifth") {
+                                               alert("b");
+                                             }
+                                           }
+
+
+
+                                           if (choosef === "third") {
+                                             if (chooses === "first") {
+                                               alert("w");
+                                             }
+                                             if (chooses === "second") {
+                                               alert("r");
+                                             } if (chooses === "third") {
+                                               alert("m");
+                                             } if (chooses === "fourth") {
+                                               alert("h");
+                                             } if (chooses === "fifth") {
+                                               alert("c");
+                                             }
+                                           }
+
+
+                                           if (choosef === "fourth") {
+                                             if (chooses === "first") {
+                                               alert("x");
+                                             }
+                                             if (chooses === "second") {
+                                               alert("s");
+                                             } if (chooses === "third") {
+                                               alert("n");
+                                             } if (chooses === "fourth") {
+                                               alert("i");
+                                             } if (chooses === "fifth") {
+                                               alert("d");
+                                             }
+                                           }
+
+                                           if (choosef === "fifth") {
+                                             if (chooses === "first") {
+                                               alert("y");
+                                             }
+                                             if (chooses === "second") {
+                                               alert("t");
+                                             } if (chooses === "third") {
+                                               alert("o");
+                                             } if (chooses === "fourth") {
+                                               alert("J");
+                                             } if (chooses === "fifth") {
+                                               alert("e");
+                                             }
+                                           }
+                                         }
+
+
+
+
+
+                                         // }, 14);
+
+
+
+
+                                         function nav(i) {
+                                           var game = document.getElementById("game");
+                                           var ins = document.getElementById("ins");
+
+                                           if (i === "game") {
+                                             ins.style.display = "none";
+                                             game.style.display = "flex";
+
+                                           } else if (i === "ins") {
+                                             game.style.display = "none";
+                                             ins.style.display = "block";
+                                           }
+                                         }
+
+                                         // earn function
+
+                                         function toggle(name, classtotoggle) {
+                                           if (name.className === classtotoggle) {
+                                             name.classList.remove = classtotoggle;
+                                           } else if (name.className !== classtotoggle) {
+                                             name.classList.add = classtotoggle;
+                                           }
+                                         }
+
+</script>
+
+</html>
